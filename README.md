@@ -7,3 +7,6 @@ https://www.figma.com/file/wLHhrzjZyNQUIxVZJ2m3eU/Travelies
 
 # References
 include reference link here
+
+# Web
+https://ppti-11-hci.github.io/travelies.github.io/
