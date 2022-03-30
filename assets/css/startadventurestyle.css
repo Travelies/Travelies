@@ -6,8 +6,9 @@ body {
   padding: 0;
 }
 
-html {
-  margin: 0;
+html{
+    margin:0;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -63,7 +64,9 @@ li a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+    height: 7px;              
+    width: 10px;
+    border: 1px solid #d5d5d5;
 }
 
 ::-webkit-scrollbar-track {
