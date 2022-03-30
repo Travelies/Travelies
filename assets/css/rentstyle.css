@@ -108,8 +108,7 @@ a:hover{
     margin-top: 0.5rem;
 }
 
-
-/* NAVBAR */
+/* NAV */
 
 nav{
     display: flex;
@@ -122,8 +121,6 @@ nav{
     background-color: #FFFFFF;
     z-index: 99;
 }
-
-
 
 .mobile-menu{
     z-index: 100;
@@ -161,9 +158,9 @@ nav{
     margin-left: 2rem;
 }
 
-.menu a:hover{
-    color: #EE6A51;
-    transition: 0.3s;
+.menu a:hover {
+  color: #ee6a51;
+  transition: 0.3s;
 }
 
 .menu {
@@ -171,17 +168,16 @@ nav{
     
 }
 
-#selected{
-  color: #EE6A51;
+#selected {
+  color: #ee6a51;
   font-weight: 640;
 }
-
 
 /* SECTION 1 */
 
 #sect1{
     /* padding-top: rem; */
-    background-image: url(../img/startadventure/sect1-bg.png);
+    background-image: url(../img/rentbg.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -231,80 +227,6 @@ nav{
 }
 
 #sect2 .bottom{
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    padding-top: 50px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    /* background-color: red; */
-}
-
-#sect2 p{
-    display: block;
-}
-
-.small-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 350px;
-    /* overflow: hidden; */
-    /* background-color: #35A9DB; */
-    border-radius: 20px;
-    text-align: center;
-}
-
-.small-card p{
-    width: 230px;
-}
-
-.card-image{
-    width: 250px;
-    transition: width 0.5s;
-}
-
-#sect2-bg1{
-    position: absolute;
-    left: 0;
-    top: 7rem;
-    width: 10rem;
-    z-index: -1;
-}
-
-
-#sect2-bg2{
-    position: absolute;
-    right: 0;
-    bottom: 2px;
-    width: 16rem;
-    z-index: -1;
-}
-
-
-/* SECTION 3 */
-
-#sect3{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0;
-}
-
-#sect3 .top{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#sect3 .bottom{
     width: 70%;
     padding-top: 50px;
     display: flex;
@@ -312,24 +234,22 @@ nav{
     /* background-color: red; */
 }
 
-#sect3 ul{
+#sect2 ul{
     padding-left: 2rem;
 }
 
-#sect3 h4{
+#sect2 h4{
     margin: 0;
     padding-left: 1rem;
     padding-top: 1rem;
 }
 
-#sect3 li{
-    list-style-type: circle;
-    margin: 0;
-    font-size: 0.9rem;
-}
 
 .big-card{
+    height: 28rem;
     display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
     flex-direction: column;
     /* background-color: #EE6A51; */
     border-radius: 16px;
@@ -348,6 +268,8 @@ nav{
     padding-right: 1rem;
     align-items: center;
 }
+
+
 
 .price{
     font-size: 1.2rem;
@@ -370,19 +292,37 @@ nav{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-#sect3-bg{
+#sect2-bg{
     position: absolute;
     right: 0;
-    bottom: 2rem;
-    width: 40rem;
+    top: 18rem;
+    width: 30rem;
     z-index: -1;
 }
+
+#sect2-bg2{
+    position: absolute;
+    left: 0;
+    bottom: -10rem;
+    width: 20rem;
+    z-index: -1;
+}
+
+.big-card-desc p{
+    width: 15rem;
+    color: #758387;
+    padding-left: 1rem;
+    font-size: .9rem;
+}
+
+
+/* SECTION 3 */
 
 
 /* FOOTER  */
 
 footer{
-    
+    background-color: #FFFFFF;
     height: 30vh;
     display: flex;
     justify-content: space-between;
@@ -469,7 +409,6 @@ footer{
     }
 
     /* SECTION 1 */
-
     #sect1 p{
         margin-top: 6rem;
         font-size: 1rem;
@@ -477,10 +416,6 @@ footer{
     }
 
     /* SECTION 2 */
-    
-   
-
-    
 
     #sect2 .bottom{
         /* background-color: red; */
@@ -491,17 +426,15 @@ footer{
         overflow-y: hidden;
     }
 
-    #sect2-bg1{
-        width: 8rem;
-        top: 3rem;
-    }
+ 
 
     #sect2-bg2{
         width: 10rem;
-        top: 3rem;
+    
     }
 
     /* SECTION 3 */
+
     #sect3 .bottom{
         /* background-color: red; */
         /* width: 500%; */
@@ -511,37 +444,22 @@ footer{
         overflow-y: hidden;
     }
 
-    .big-card{
-        margin-top: 2rem;
-        margin-left: 1rem;
-        height: 27rem;
-        width: 14rem;
-    }
+    
+/* FOOTER */
+footer{
+    padding: 0;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    align-items: flex-start;
+    justify-content: center;
+}
 
-    .offer-img{
-        width: 14rem;
-    }
+footer img{
+    width: 15rem;
+}
 
-    #sect3-bg{
-        width: 20rem;
-    }
 
-    /* FOOTER  */
-    footer{
-        padding: 0;
-        flex-direction: column;
-        width: 100vw;
-        height: 60vh;
-        align-items: flex-start;
-        justify-content: center;
-    }
 
-    footer img{
-        width: 15rem;
-    }
-
-    .footer-right{
-        
-    }
 
 }

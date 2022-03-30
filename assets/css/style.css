@@ -199,6 +199,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     
 }
 
@@ -567,12 +568,10 @@ a:hover{
     .menu{
         display: none;
     }
-
+    /* mobile nav */
     nav{
         justify-content: space-between;
     }
-
-   
 
     .nav-mobile{
         display: flex;
@@ -580,6 +579,7 @@ a:hover{
         padding-right: 4rem;
 
     }
+    /* end of mobile nav */
 
     .sect1-top{
             flex-direction: column;
