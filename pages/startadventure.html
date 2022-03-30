@@ -40,13 +40,15 @@
         <a href="#">Rent</a>
         <a href="#">Contact Us</a>
       </div>
-      <!-- BUATIN JS YG NGUBAH DISPLAY CLASS MOBILE-MENU JADI BLOCK 
-            WAKTU KLIK GAMBAR INI DIBAWAH
-        -->
-      <img src="assets/img/nav-mobile.svg" class="nav-mobile" alt="" />
+      <img
+        src="assets/img/nav-mobile.svg"
+        class="nav-mobile"
+        alt=""
+        onclick="show_nav()"
+      />
     </nav>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="nav-mobile">
       <ul>
         <li>
           <h3><a href="index.html" id="selected">Home</a></h3>
@@ -64,7 +66,9 @@
           <h3><a href="#">Contact Us</a></h3>
         </li>
         <li>
-          <h3><img src="./assets/img/silang.svg" alt="" /></h3>
+          <h3>
+            <img src="./assets/img/silang.svg" alt="" onclick="close_nav()" />
+          </h3>
         </li>
       </ul>
     </div>
@@ -268,5 +272,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./assets/scripts/nav.js"></script>
   </body>
 </html>
