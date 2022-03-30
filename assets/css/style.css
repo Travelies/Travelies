@@ -1,5 +1,9 @@
 /* GENERAL DECLARATION */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -184,12 +188,12 @@ nav {
   width: 20rem;
   z-index: -1;
 }
-
 .sect2-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .sect2-bottom {
@@ -536,6 +540,7 @@ a:hover {
     display: none;
   }
 
+  /* mobile nav */
   nav {
     justify-content: space-between;
   }
@@ -545,6 +550,7 @@ a:hover {
     width: 20px;
     padding-right: 4rem;
   }
+  /* end of mobile nav */
 
   .sect1-top {
     flex-direction: column;
@@ -677,8 +683,5 @@ a:hover {
 
   footer img {
     width: 15rem;
-  }
-
-  .footer-right {
   }
 }
