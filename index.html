@@ -1,253 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travelies</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travelies!</title>
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <!-- Bold -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;640&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;640&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="shortcut icon" href="./assets/img/pm-lm-side logo.png" type="image/x-icon">
-  </head>
-  <body>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
     <!-- NAVBAR -->
     <nav>
-      <div class="logo">
-        <img src="assets/img/pm-lm-side logo.png" alt="Travelies" />
-      </div>
+        <div class="logo">
+            <img src="assets/img/pm-lm-side logo.png" alt="Travelies">
+        </div>
 
-      <div class="menu">
-        <a href="#" id="selected">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Start Adventure</a>
-
-        <a href="#">Rent</a>
-        <a href="#">Contact Us</a>
-      </div>
+        <div class="menu">
+            <a href="#" id="selected">Home</a>
+            <a href="#">About Us</a>
+            <a href="startadventure.html">Start Adventure</a>
+            <a href="#">Rent</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <img src="assets/img/nav-mobile.svg" class="nav-mobile" alt="" onclick="show_nav()">
     </nav>
+
+    
+    <div class="mobile-menu" id="nav-mobile">
+        <ul>
+            <li><h3><a href="#" id="selected">Home</a></h3></li>
+            <li><h3><a href="#">About Us</a></h3></li>
+            <li><h3><a href="#">Start Adventure</a></h3></li>
+            <li><h3><a href="#">Rent</a></h3></li>
+            <li><h3><a href="#">Contact Us</a></h3></li>
+            <li><h3><img src="./assets/img/silang.svg" alt="" onclick="close_nav()"></h3></li>
+        </ul>
+    </div>
 
     <!-- SECTION 1 : OVEREVIEW -->
 
     <div class="container">
-      <section id="sect1">
-        <div class="sect1-top">
-          <div class="sect1-content">
-            <h1>Kunjungi Pesona<br />Negeri</h1>
+        <section id="sect1">
+            <div class="sect1-top">
+                <div class="sect1-content">
+                    <img src="assets/img/banner-big.svg" alt="" class="banner-big"/>
 
-            <p>
-              Kami tahu kalian bosan di rumah, oleh karena itu<br />jangan ragu
-              untuk travelling.
-            </p>
+                    <h1>Kunjungi Pesona<br>Negeri</h1>
 
-            <div class="input-text">
-              <img src="assets/img/lup.svg" alt="" />
-              <form action="#">
-                <input
-                  type="text"
-                  placeholder="Cari tempat, kota, atau wisata"
-                  class="input-medium"
-                />
-              </form>
+                    <p>Kami tahu kalian bosan di rumah, oleh karena itu<br>jangan ragu untuk travelling.</p>
+
+                    <div class="input-text">
+                        <img src="assets/img/lup.svg" alt="">
+                        <form action="#">
+                            <input type="text" placeholder="Cari tempat, kota, atau wisata" class="input-medium">
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="banner">
-            <img src="assets/img/banner-big.svg" alt="" class="banner-big" />
-          </div>
-        </div>
+            <div class="sect1-bottom">
+                <a href="#sect3"><img src="assets/img/down-arrow.svg" alt=""></a>
+            </div>
 
-        <div class="sect1-bottom">
-          <img src="assets/img/down-arrow.svg" alt="" />
-        </div>
-      </section>
+        </section>
+
     </div>
 
     <!-- SECTION 2 : Counter -->
     <div class="container">
-      <section id="sect2">
-        <div class="sect2-top">
-          <h2>Apa itu Travelies?</h2>
-          <p>Travelies adalah platform perjalanan terpercaya.</p>
-        </div>
+        <section id="sect2">
 
-        <div class="sect2-bottom">
-          <div class="counter">
-            <h2>5+</h2>
-            <p>destinasi mengagumkan</p>
-          </div>
+            <div class="sect2-top">
+                <h2>Apa itu Travelies?</h2>
+                <div class="underline"></div>
+                <p>Travelies adalah platform perjalanan terpercaya.</p>
+            </div>
 
-          <div class="border"></div>
+            <div class="sect2-bottom">
+                <!-- Satu -->
+                <div class="counter">
+                    <h2>5+</h2>
+                    <p>destinasi mengagumkan</p>
+                </div>
 
-          <div class="counter">
-            <h2>10+</h2>
-            <p>foto-foto indah</p>
-          </div>
+                <!-- <div class="border"></div> -->
 
-          <div class="border"></div>
+                <div class="counter">
+                    <h2>10+</h2>
+                    <p>foto-foto indah</p>
+                </div>
 
-          <div class="counter">
-            <h2>15+</h2>
-            <p>produk lokal</p>
-          </div>
+                <!-- Dua -->
 
-          <div class="border"></div>
+                <!-- <div class="border"></div> -->
 
-          <div class="counter">
-            <h2>100+</h2>
-            <p>pengunjung website</p>
-          </div>
-        </div>
-      </section>
+                <div class="counter">
+                    <h2>15+</h2>
+                    <p>produk lokal</p>
+                </div>
+
+                <!-- <div class="border"></div> -->
+
+                <div class="counter">
+                    <h2>100+</h2>
+                    <p>pengunjung website</p>
+                </div>
+            </div>
+
+            <img src="./assets/img/banner.svg" alt="" id="sect2-bg">
+
+
+        </section>
     </div>
 
     <!-- SECTION 3 : VIDEO, IMAGE, EXPLANATION -->
     <div class="container">
-      <section id="sect3">
-        <div class="sect3-top">
-          <h2>Pilih tujuan travellingmu!</h2>
-          <div class="underline"></div>
-        </div>
+        <section id="sect3">
+            <div class="sect3-top">
+                <h2>Pilih tujuan travellingmu!</h2>
+                <div class="underline"></div>
+            </div>
 
-        <div class="sect3-middle">
-          <div class="small-card">
-            <img
-              src="assets/img/febiyan-UGIy3XjHI3s-unsplash 1.png"
-              alt="Hiking Image"
-              class="card-image"
-            />
-            <h4>Hiking</h4>
-            <p>
-              Mendaki atau kini disebut <i>hiking</i> merupakan aktivitas yang
-              berhubungan dengan gunung.
-            </p>
-          </div>
+            <div class="sect3-middle">
+                <div class="small-card">
+                    <img src="assets/img/febiyan-UGIy3XjHI3s-unsplash 1.png" alt="Hiking Image" class="card-image">
+                    <h4>Hiking</h4>
+                    <p>Mendaki atau kini disebut <i>hiking</i> merupakan aktivitas yang berhubungan dengan gunung.</p>
+                </div>
 
-          <div class="small-card">
-            <img
-              src="assets/img/silas-baisch-ZJO32R_G-iQ-unsplash 1.png"
-              alt="Hiking Image"
-              class="card-image"
-            />
-            <h4>Fishing</h4>
-            <p>
-              Mendaki atau kini disebut <i>fishing</i> merupakan aktivitas yang
-              berhubungan dengan memancing.
-            </p>
-          </div>
+                <div class="small-card">
+                    <img src="assets/img/silas-baisch-ZJO32R_G-iQ-unsplash 1.png" alt="Hiking Image" class="card-image">
+                    <h4>Fishing</h4>
+                    <p>Mendaki atau kini disebut <i>fishing</i> merupakan aktivitas yang berhubungan dengan memancing.
+                    </p>
+                </div>
 
-          <div class="small-card">
-            <img
-              src="assets/img/arialqadri-eOPhf0z2Q9g-unsplash 1.png"
-              alt="Hiking Image"
-              class="card-image"
-            />
-            <h4>Camping</h4>
-            <p>
-              Mendaki atau kini disebut <i>camping</i> merupakan aktivitas yang
-              berhubungan dengan tenda.
-            </p>
-          </div>
-        </div>
+                <div class="small-card">
+                    <img src="assets/img/arialqadri-eOPhf0z2Q9g-unsplash 1.png" alt="Hiking Image" class="card-image">
+                    <h4>Camping</h4>
+                    <p>Mendaki atau kini disebut <i>camping</i> merupakan aktivitas yang berhubungan dengan tenda.</p>
+                </div>
+            </div>
 
-        <!-- VIDEO -->
-        <!-- <div class="sect3-bottom"> 
-                    <video width="700px" class="video" controls="controls"/ > 
-                        
-                        <source src="assets/vid/hiking.MOV" type="video/mp4"> 
-                    </video> 
-                </div> -->
-        <!-- END OF VIDEO -->
-      </section>
+
+        </section>
+    </div>
+
+    
+
+    <div class="container">
+        <section id="videotron">
+
+            <!-- VIDEO -->
+
+            <div>
+                <video class="video" controls="controls">
+                    <source src="assets/vid/hiking.MOV" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="vid-desc">
+                <h2>Video about our activities.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reiciendis provident dolorem
+                necessitatibus architecto iusto.</p>
+            </div>
+
+
+
+
+
+            <!-- END OF VIDEO -->
+
+        </section>
     </div>
 
     <!-- SECTION 4 : SHARE ANG BLOG -->
 
     <div class="container">
-      <section id="sect4">
-        <div class="sect4-top">
-          <div class="sect4-top-left">
-            <h3>Find the best <br />travelling tools</h3>
-            <p>
-              Kami memiliki berbagai macam pilihan penginapan di<br />berbagai
-              wilayah sekitar spot wisata yang tersedia untuk<br />anda
-            </p>
-          </div>
+        <section id="sect4">
+            <div class="sect4-top">
+                <div class="sect4-top-left">
+                    <h3>Find the best
+                        <br>travelling tools
+                    </h3>
+                    <p>Kami memiliki berbagai macam pilihan penginapan di berbagai wilayah sekitar spot wisata yang
+                        tersedia untuk<br>anda</p>
+                </div>
 
-          <div class="sect4-top-right">
-            <a href="#" class="btn-medium">
-              <div class="btn-medium">Lihat produk yang tersedia</div>
+                <div class="sect4-top-right">
 
-              <img src="assets/img/bx-right-arrow-alt.svg" alt="" />
-            </a>
-          </div>
-        </div>
+                    <a href="#" class="btn-medium">
+                        <div class="btn-medium">
+                            Lihat produk yang tersedia
+                        </div>
 
-        <div class="sect4-bottom">
-          <div class="sect4-bottom-top">
-            <h2>Berbagi itu indah.</h2>
-            <div class="underline"></div>
-            <p>
-              Bagikan ke relasi, saudara, teman <br />karena berbagi itu indah.
-            </p>
-          </div>
+                        <img src="assets/img/bx-right-arrow-alt.svg" alt="">
+                    </a>
 
-          <div class="sect4-bottom-bottom">
-            <a href="instagram.com"
-              ><img src="assets/img/ig.svg" alt="instagram"
-            /></a>
-            <a href="facebook.com"
-              ><img src="assets/img/fb.svg" alt="facebook"
-            /></a>
-            <a href="telegram.com"
-              ><img src="assets/img/tele.svg" alt="telegram"
-            /></a>
-            <a href="whatsapp.com"
-              ><img src="assets/img/wa.svg" alt="whatsapp"
-            /></a>
-          </div>
-        </div>
-      </section>
+                </div>
+            </div>
+
+            <div class="sect4-bottom">
+                <div class="sect4-bottom-top">
+                    <h2>Sharing is Caring.</h2>
+                    <div class="underline"></div>
+                    <p>Share this information to your relation
+                    <br>because sharing is caring.
+                    </p>
+                </div>
+
+                <div class="sect4-bottom-bottom">
+                    <a href="instagram.com"><img src="assets/img/ig.svg" alt="instagram" class="socialmedia"></a>
+                    <a href="facebook.com"><img src="assets/img/fb.svg" alt="facebook" class="socialmedia"></a>
+                    <a href="telegram.com"><img src="assets/img/tele.svg" alt="telegram" class="socialmedia"></a>
+                    <a href="whatsapp.com"><img src="assets/img/wa.svg" alt="whatsapp" class="socialmedia"></a>
+                </div>
+            </div>
+        </section>
     </div>
-
+    <!-- FOOTER -->
     <footer>
-      <div class="footer-left">
-        <img src="assets/img/pm-lm-side logo.png" alt="" />
-        <p>Jelajahi nusantara dan rasakan<br />pengalaman yang luar biasa.</p>
-      </div>
-
-      <div class="footer-right">
-        <div class="footer-right-inside">
-          <p class="footer-title">Destinasi</p>
-          <a href="#">Hiking</a>
-          <a href="#">Camping</a>
-          <a href="#">Fishing</a>
+        <div class="footer-left">
+            <img src="assets/img/pm-lm-side logo.png" alt="">
+            <p>Jelajahi nusantara dan rasakan<br>pengalaman yang luar biasa.</p>
         </div>
 
-        <div class="footer-right-inside">
-          <p class="footer-title">Bagikan</p>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          <a href="#">Telegram</a>
-          <a href="#">Whatsapp</a>
+        <div class="footer-right">
+            <ul class="footer-right-inside">
+
+                <li>
+                    <p class="footer-title">Destinasi</p>
+                </li>
+                <li><a href="#">Hiking</a></li>
+                <li><a href="#">Camping</a></li>
+                <li><a href="#">Fishing</a></li>
+
+            </ul>
+
+            <ul class="footer-right-inside">
+                <li>
+                    <p class="footer-title">Bagikan</p>
+                </li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Whatsapp</a></li>
+            </ul>
         </div>
-      </div>
     </footer>
-  </body>
+
+    <script src="./assets/scripts/home.js"></script>
+
+</body>
+
 </html>
