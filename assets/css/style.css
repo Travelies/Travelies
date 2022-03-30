@@ -1,5 +1,8 @@
 /* GENERAL DECLARATION */
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     background-color: #FFFFFF;
     font-family: 'Inter', sans-serif;
