@@ -3,12 +3,13 @@ const showErr = (msg, label) => {
   errDiv.className = 'err-msg';
   errDiv.innerHTML = msg;
   const div = document.getElementById(`form-${label}`);
+  div.setAttribute('isvalid', 'false');
   div.appendChild(errDiv);
 }
 
 const removeErr = (label) => {
   const err = document.getElementsByClassName('err-msg');
-  Array.from(err).forEach(item => item.remove());
+  Array.from(err).forEach(item => item.remove() && item.setAttribute('isvalid', 'true'));
 }
 
 const validateForm = () => {

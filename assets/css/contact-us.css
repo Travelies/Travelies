@@ -36,3 +36,13 @@
   color: red;
   opacity: 75%;
 }
+
+input:invalid {
+  animation: shake 300ms;
+}
+
+@keyframes shake {
+  25% { transform: (4px); }
+  50% { transform: (-4px); }
+  75% { transform: (4px); }
+}
