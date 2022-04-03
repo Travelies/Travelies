@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 body {
@@ -8,10 +9,6 @@ body {
   margin: 0;
   overflow-x: default;
   padding: 0;
-}
-
-html {
-  margin: 0;
 }
 
 h1 {
