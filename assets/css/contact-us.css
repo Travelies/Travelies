@@ -233,3 +233,35 @@ nav {
   color: red;
   opacity: 75%;
 }
+
+footer {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 100px;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 0.2);
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-right div {
+  width: 50%;
+}
+
+.footer-left {
+  margin-left: 40px;
+}
+
+.footer-right-inside a {
+  color: #67787c;
+}
+
+.footer-title {
+  color: black;
+  font-weight: 640;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
