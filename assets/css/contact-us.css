@@ -178,7 +178,8 @@ nav {
   margin: 0;
 }
 
-#section-one h2, p {
+#section-one h2,
+p {
   color: white;
   text-align: center;
 }
@@ -222,7 +223,7 @@ nav {
 }
 
 label {
-  margin: auto; 
+  margin: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -243,7 +244,7 @@ label {
   line-height: 1.5;
   color: #495057;
   border: 1px solid #ced4da;
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
@@ -276,8 +277,8 @@ label {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -288,16 +289,16 @@ label {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #ee6a51
+  background-color: #ee6a51;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #ee6a51
+  box-shadow: 0 0 1px #ee6a51;
 }
 
 input:checked + .slider:before {
@@ -330,7 +331,7 @@ input:checked + .slider:before {
 }
 
 .btn-cyan {
-  background: #7BB3BF;
+  background: #7bb3bf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
   border-radius: 10px;
@@ -343,7 +344,8 @@ input:checked + .slider:before {
   padding: 0;
 }
 
-.form-end, .form-top {
+.form-end,
+.form-top {
   display: flex;
   justify-content: flex-end;
 }

@@ -175,7 +175,8 @@ nav {
   margin: 0;
 }
 
-#section-one h2, p {
+#section-one h2,
+p {
   color: white;
   text-align: center;
 }
@@ -210,7 +211,7 @@ nav {
   color: black;
   font-size: 25px;
   font-weight: normal;
-  margin: 3rem
+  margin: 3rem;
 }
 
 .floating-item {
