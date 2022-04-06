@@ -1,7 +1,7 @@
-'use strict'
+const $ = (id) => document.getElementById(id);
 
 const show_nav = () => 
-  document.getElementById('nav-mobile').style.display = 'block';
+  $('nav-mobile').style.display = 'block';
 
 const close_nav = () => 
-  document.getElementById('nav-mobile').style.display = 'none';
+  $('nav-mobile').style.display = 'none';
