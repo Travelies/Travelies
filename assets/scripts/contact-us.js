@@ -4,7 +4,7 @@ const showErr = (msg, label) => {
   const errDiv = document.createElement("div");
   errDiv.className = "err-msg";
   errDiv.innerHTML = msg;
-  
+
   const div = $(`form-${label}`);
   div.appendChild(errDiv);
 };
@@ -22,7 +22,6 @@ const validateForm = () => {
   const { value: phone } = $("phone");
   const { value: service } = $("services");
   const { value: message } = $("message");
-  const gears = $('gears');
 
   removeErr();
 
@@ -54,11 +53,10 @@ const validateForm = () => {
 };
 
 const switchFormToOrder = () => {
-  $('section-two-title').innerHTML ='Place Your Order';
-  
-  const gears = document.createElement('div');
-  gears.innerHTML = 
-  `<div class="form-group" id="form-gears">
+  $("section-two-title").innerHTML = "Place Your Order";
+
+  const gears = document.createElement("div");
+  gears.innerHTML = `<div class="form-group" id="form-gears">
     <label for="gears">Gears</label> <br />
     <select name="gears" id="gears" class="form-control">
       <option value="" selected disabled>Select Your Gear</option>
@@ -70,7 +68,7 @@ const switchFormToOrder = () => {
       <option value="Fishing Bait">Fishing Bait</option>
       <option value="Sleeping Bag">Sleeping Bag</option>
     </select>
-  </div>`
-  
-  $('contact-us-form').insertBefore(gears, $('contact-us-form').children[5]);
-}
+  </div>`;
+
+  $("contact-us-form").insertBefore(gears, $("contact-us-form").children[5]);
+};
