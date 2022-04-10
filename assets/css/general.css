@@ -57,30 +57,6 @@ li a:hover {
   transition: 0.2s;
 }
 
-::-webkit-scrollbar {
-  height: 7px;
-  width: 10px;
-  border: 1px solid #d5d5d5;
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 1px #111111;
-  border-radius: 0px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ee6a51;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #da8979;
-}
-
 a:hover {
   color: #ee6a51;
   transition: 0.2s;
