@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
   }
@@ -91,6 +90,28 @@ a:hover{
     margin-top: 0.5rem;
 }
 
+
+.tothetop{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ee6a51;
+    border-radius: 999rem;
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.tothetop img{
+    width: 20px;
+    filter: grayscale(100%) invert(100%);    
+    transform: rotate(180deg);
+}
+
 /* NAV */
 
 nav{
@@ -156,23 +177,6 @@ nav{
   font-weight: 640;
 }
 
-=======
-.container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  margin: 0px;
-}
-
-.underline {
-  background-color: #ee6a51;
-  width: 150px;
-  height: 9px;
-  border-radius: 100px;
-  margin-top: 0.5rem;
-}
-
->>>>>>> 3c3b9655240b476300e87243dd43f401d716b6e4
 /* SECTION 1 */
 
 #sect1{

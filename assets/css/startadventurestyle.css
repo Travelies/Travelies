@@ -151,6 +151,28 @@ nav{
 }
 
 
+/* TO THE TOP BTN */
+.tothetop{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ee6a51;
+    border-radius: 999rem;
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.tothetop img{
+    width: 20px;
+    filter: grayscale(100%) invert(100%);    
+    transform: rotate(180deg);
+}
+
 /* SECTION 1 */
 
 #sect1{
@@ -282,7 +304,7 @@ nav{
     width: 100%;
     padding-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* background-color: red; */
 }
 
