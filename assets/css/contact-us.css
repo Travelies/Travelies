@@ -190,3 +190,25 @@ input:checked + .slider:before {
   display: flex;
   justify-content: flex-end;
 }
+
+
+.tothetop{
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  background-color: #ee6a51;
+  border-radius: 999rem;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.tothetop img{
+  width: 20px;
+  filter: grayscale(100%) invert(100%);    
+  transform: rotate(180deg);
+}
