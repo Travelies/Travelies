@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
   }
@@ -155,6 +156,23 @@ nav{
   font-weight: 640;
 }
 
+=======
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  margin: 0px;
+}
+
+.underline {
+  background-color: #ee6a51;
+  width: 150px;
+  height: 9px;
+  border-radius: 100px;
+  margin-top: 0.5rem;
+}
+
+>>>>>>> 3c3b9655240b476300e87243dd43f401d716b6e4
 /* SECTION 1 */
 
 #sect1{
