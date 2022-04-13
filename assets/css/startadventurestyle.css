@@ -513,9 +513,9 @@ footer{
     /* SECTION 3 */
     #sect3 .bottom{
         /* background-color: red; */
-        /* width: 500%; */
+        /* width: 50%; */
         padding-left: 3rem;
-   
+        justify-content: space-between;
         height: 31rem;
         gap: 1.5rem;
         overflow-x: scroll;
