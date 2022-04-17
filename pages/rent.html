@@ -21,12 +21,6 @@
       rel="stylesheet"
     />
 
-    <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/a074cc307a.js"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/general.css" />
     <link rel="stylesheet" href="../assets/css/rentstyle.css" />
@@ -45,12 +39,10 @@
         <a href="./rent.html" id="selected">Rent</a>
         <a href="./contact-us.html">Contact Us</a>
       </div>
-      <img
-        src="../assets/img/nav-mobile.svg"
-        class="nav-mobile"
-        alt=""
+      <i
+        class="fa fa-solid fa-bars nav-mobile icons color-black"
         onclick="show_nav()"
-      />
+      ></i>
     </nav>
 
     <div class="mobile-menu" id="nav-mobile">
@@ -72,7 +64,7 @@
         </li>
         <li>
           <h3>
-            <img src="../assets/img/silang.svg" alt="" onclick="close_nav()" />
+            <i class="fa-solid fa-xmark icons color-black" onclick="close_nav()"></i>
           </h3>
         </li>
       </ul>
@@ -87,9 +79,10 @@
           Rent the best gears for your trip with affordable<br />price. Rent it
           now!
         </p>
-        <a href="#sect2"
-          ><img src="./../assets/img/down-arrow.svg" alt="" class="down-arrow"
-        /></a>
+        <i
+        class="fa-solid fa-chevron-down icons"
+        onclick="goTo('#sect2')"
+      ></i>
       </section>
     </div>
 
@@ -105,7 +98,7 @@
           <div class="big-card">
             <div class="big-card-img">
               <img
-                src="./../assets/img/backpack.png"
+                src="../assets/img/backpack.png"
                 alt="Hiking Offer"
                 class="offer-img"
               />
@@ -126,7 +119,7 @@
           <div class="big-card">
             <div class="big-card-img">
               <img
-                src="./../assets/img/tent.png"
+                src="../assets/img/tent.png"
                 alt="Hiking Offer"
                 class="offer-img"
               />
@@ -147,7 +140,7 @@
           <div class="big-card">
             <div class="big-card-img">
               <img
-                src="./../assets/img/pack.png"
+                src="../assets/img/pack.png"
                 alt="Hiking Offer"
                 class="offer-img"
               />
@@ -335,6 +328,10 @@
       </section>
     </div>
 
+    <div class="tothetop" id="tothetop" onclick="scrollToTop()">
+      <i class="fa-solid fa-angles-up icons"></i>
+    </div>
+
     <!-- FOOTER -->
     <footer>
       <div class="footer-left">
@@ -364,6 +361,11 @@
       </div>
     </footer>
 
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/a074cc307a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../assets/scripts/nav.js"></script>
   </body>
 </html>

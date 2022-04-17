@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Travelies</title>
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,12 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;640&display=swap"
       rel="stylesheet"
     />
-
-    <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/a074cc307a.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- STYLE -->
     <link rel="stylesheet" href="../assets/css/general.css" />
@@ -45,19 +40,11 @@
         <a href="./rent.html">Rent</a>
         <a href="./contact-us.html">Contact Us</a>
       </div>
-      <img
-        src="../assets/img/nav-mobile.svg"
-        class="nav-mobile"
-        alt=""
+      <i
+        class="fa fa-solid fa-bars nav-mobile icons color-black"
         onclick="show_nav()"
-      />
+      ></i>
     </nav>
-
-    <div class="tothetop">
-      <a href="#section-one">
-          <img src="../assets/img/down-arrow.svg" alt="Naik">
-      </a>
-  </div>
 
     <div class="mobile-menu" id="nav-mobile">
       <ul>
@@ -78,7 +65,7 @@
         </li>
         <li>
           <h3>
-            <img src="../assets/img/silang.svg" alt="" onclick="close_nav()" />
+            <i class="fa-solid fa-xmark icons color-black" onclick="close_nav()"></i>
           </h3>
         </li>
       </ul>
@@ -91,13 +78,10 @@
         Hello! <br />
         Travelies is a trusted travel service provider platform in Indonesia
       </p>
-      <a href="#section-two">
-        <img
-          src="../assets/img/down-arrow.svg"
-          alt="down-arrow"
-          class="down-arrow"
-        />
-      </a>
+      <i
+        class="fa-solid fa-chevron-down icons"
+        onclick="goTo('#section-two')"
+      ></i>
     </section>
 
     <section id="section-two" class="container">
@@ -107,7 +91,7 @@
         class="floating-item"
       />
       <div class="section-two-content">
-        <h2>History</h2>
+        <h3>History</h3>
         <div class="underline"></div>
         <p>
           We stand with the determination to explore and optimize the country's
@@ -117,7 +101,7 @@
       </div>
 
       <div class="section-two-content">
-        <h2>Vision</h2>
+        <h3>Vision</h3>
         <div class="underline"></div>
         <p>
           Our vision is to become a travel service provider who becomes a <br />
@@ -126,7 +110,7 @@
       </div>
 
       <div class="section-two-content">
-        <h2>Mision</h2>
+        <h3>Mission</h3>
         <div class="underline"></div>
         <p>
           Our mission is to make our platform the best travel service provider
@@ -135,6 +119,10 @@
         </p>
       </div>
     </section>
+
+    <div class="tothetop" id="tothetop" onclick="scrollToTop()">
+      <i class="fa-solid fa-angles-up icons"></i>
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -167,5 +155,9 @@
     <!-- END FOOTER -->
 
     <script src="../assets/scripts/nav.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a074cc307a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

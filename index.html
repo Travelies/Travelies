@@ -22,24 +22,12 @@
       rel="stylesheet"
     />
 
-    <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/a074cc307a.js"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/general.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
   </head>
 
   <body>
-    <div class="tothetop">
-      <a href="#sect1">
-        <img src="./assets/img/down-arrow.svg" alt="Naik" />
-      </a>
-    </div>
-
     <!-- NAV -->
     <nav>
       <div class="logo">
@@ -53,21 +41,19 @@
         <a href="./pages/rent.html">Rent</a>
         <a href="./pages/contact-us.html">Contact Us</a>
       </div>
-      <img
-        src="./assets/img/nav-mobile.svg"
-        class="nav-mobile"
-        alt=""
+      <i
+        class="fa fa-solid fa-bars nav-mobile icons color-black"
         onclick="show_nav()"
-      />
+      ></i>
     </nav>
 
     <div class="mobile-menu" id="nav-mobile">
       <ul>
         <li>
-          <h3><a href="./index.html">Home</a></h3>
+          <h3><a href="./index.html" id="selected">Home</a></h3>
         </li>
         <li>
-          <h3><a href="./pages/about-us.html" id="selected">About Us</a></h3>
+          <h3><a href="./pages/about-us.html">About Us</a></h3>
         </li>
         <li>
           <h3><a href="./pages/startadventure.html">Start Adventure</a></h3>
@@ -80,7 +66,7 @@
         </li>
         <li>
           <h3>
-            <img src="./assets/img/silang.svg" alt="" onclick="close_nav()" />
+            <i class="fa-solid fa-xmark icons color-black" onclick="close_nav()"></i>
           </h3>
         </li>
       </ul>
@@ -102,7 +88,7 @@
             </p>
 
             <div class="input-text">
-              <img src="./assets/img/lup.svg" alt="" />
+              <i class="fa-solid fa-magnifying-glass icons color-black"></i>
               <form action="#">
                 <input
                   type="text"
@@ -115,7 +101,7 @@
         </div>
 
         <div class="sect1-bottom">
-          <a href="#sect3"><img src="./assets/img/down-arrow.svg" alt="" /></a>
+          <i class="fa-solid fa-chevron-down icons color-black" onclick="goTo('#sect3')"></i>
         </div>
       </section>
     </div>
@@ -136,23 +122,15 @@
             <p>destinasi mengagumkan</p>
           </div>
 
-          <!-- <div class="border"></div> -->
-
           <div class="counter">
             <h2>10+</h2>
             <p>foto-foto indah</p>
           </div>
 
-          <!-- Dua -->
-
-          <!-- <div class="border"></div> -->
-
           <div class="counter">
             <h2>15+</h2>
             <p>produk lokal</p>
           </div>
-
-          <!-- <div class="border"></div> -->
 
           <div class="counter">
             <h2>100+</h2>
@@ -254,7 +232,7 @@
             <a href="#" class="btn-medium">
               <div class="btn-medium">Lihat produk yang tersedia</div>
 
-              <img src="./assets/img/bx-right-arrow-alt.svg" alt="" />
+              <i class="fa-solid fa-arrow-right icons"></i>
             </a>
           </div>
         </div>
@@ -271,32 +249,24 @@
 
           <div class="sect4-bottom-bottom">
             <a href="instagram.com"
-              ><img
-                src="./assets/img/ig.svg"
-                alt="instagram"
-                class="socialmedia"
-            /></a>
+              ><i class="fa-brands fa-instagram icons color-black"></i
+            ></a>
             <a href="facebook.com"
-              ><img
-                src="./assets/img/fb.svg"
-                alt="facebook"
-                class="socialmedia"
-            /></a>
+              ><i class="fa-brands fa-facebook icons color-black"></i
+            ></a>
             <a href="telegram.com"
-              ><img
-                src="./assets/img/tele.svg"
-                alt="telegram"
-                class="socialmedia"
-            /></a>
+              ><i class="fa-brands fa-telegram icons color-black"></i
+            ></a>
             <a href="whatsapp.com"
-              ><img
-                src="./assets/img/wa.svg"
-                alt="whatsapp"
-                class="socialmedia"
-            /></a>
+              ><i class="fa-brands fa-whatsapp icons color-black"></i
+            ></a>
           </div>
         </div>
       </section>
+    </div>
+
+    <div class="tothetop" id="tothetop" onclick="scrollToTop()">
+      <i class="fa-solid fa-angles-up icons"></i>
     </div>
 
     <!-- FOOTER -->
@@ -327,7 +297,12 @@
         </ul>
       </div>
     </footer>
-  </body>
 
-  <script src="./assets/scripts/nav.js"></script>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/a074cc307a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/scripts/nav.js"></script>
+  </body>
 </html>

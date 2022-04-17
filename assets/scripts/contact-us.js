@@ -1,5 +1,3 @@
-const $ = (id) => document.getElementById(id);
-
 const showErr = (msg, label) => {
   const errDiv = document.createElement("div");
   errDiv.className = "err-msg";
