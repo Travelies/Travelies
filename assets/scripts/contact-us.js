@@ -9,9 +9,7 @@ const showErr = (msg, label) => {
 
 const removeErr = () => {
   const err = document.getElementsByClassName("err-msg");
-  Array.from(err).forEach(
-    (item) => item.remove() && item.setAttribute("isvalid", "true")
-  );
+  Array.from(err).forEach((item) => item.remove());
 };
 
 const validateForm = () => {

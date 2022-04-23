@@ -131,7 +131,7 @@ label {
 .err-msg {
   color: red;
   opacity: 75%;
-  margin: 0;
+  margin-top: 1rem;
   padding: 0;
 }
 
