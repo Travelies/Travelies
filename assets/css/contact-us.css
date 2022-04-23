@@ -30,6 +30,15 @@ p {
   font-size: 1.29em;
 }
 
+.btn-container {
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .down-arrow {
   margin-top: 2rem;
   width: 2rem;
@@ -39,11 +48,14 @@ p {
 #section-two {
   height: 100vh;
   width: 100%;
+  overflow-y: scroll;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .floating-item {
   position: absolute;
-  top: 40rem;
+  top: 0;
   left: 0;
   height: auto;
   width: 100%;
@@ -57,10 +69,6 @@ p {
 .my-1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mt-5 {
-  margin-top: 5rem;
 }
 
 label {
@@ -92,7 +100,9 @@ label {
 
 .form-container {
   width: 50vw;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-left: auto;
   margin-right: auto;
 }
@@ -129,26 +139,4 @@ label {
 .form-top {
   display: flex;
   justify-content: flex-end;
-}
-
-
-.tothetop{
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  background-color: #ee6a51;
-  border-radius: 999rem;
-  bottom: 2rem;
-  right: 1rem;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: .5s;
-}
-
-.tothetop img{
-  width: 20px;
-  filter: grayscale(100%) invert(100%);    
-  transform: rotate(180deg);
 }

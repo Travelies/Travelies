@@ -20,6 +20,7 @@ const validateForm = () => {
   const { value: phone } = $("phone");
   const { value: service } = $("services");
   const { value: message } = $("message");
+  const gears = $("gears");
 
   removeErr();
 
@@ -40,6 +41,8 @@ const validateForm = () => {
       "Phone must be at least 10 numbers and maximum 14 characters",
       "phone"
     );
+  } else if (gears) {
+
   } else if (!service) {
     showErr("Service must be filled", "service");
   } else if (!message) {
@@ -50,23 +53,36 @@ const validateForm = () => {
   }
 };
 
-const switchFormToOrder = () => {
-  $("section-two-title").innerHTML = "Place Your Order";
+const displaySuggestion = () => {
+  $('section-two-title').innerHTML = 'Suggestion and Feedback';
+  const form = $('form');
+  
+  const gears_index = Array.from(form.children).findIndex(div => div.id == 'form-gears');
+  if (gears_index != -1) form.removeChild(form.children[gears_index]);
+  
+  window.location.href = '#section-two';
+}
 
-  const gears = document.createElement("div");
-  gears.innerHTML = `<div class="form-group" id="form-gears">
-    <label for="gears">Gears</label> <br />
-    <select name="gears" id="gears" class="form-control">
-      <option value="" selected disabled>Select Your Gear</option>
-      <option value="Hiking Backpack">Hiking Backpack</option>
-      <option value="Tent">Tent</option>
-      <option value="Hiking Pack">Hiking Pack</option>
-      <option value="Modern Fishing Rod">Modern Fishing Rod</option>
-      <option value="Fishing Bucket">Fishing Bucket</option>
-      <option value="Fishing Bait">Fishing Bait</option>
-      <option value="Sleeping Bag">Sleeping Bag</option>
-    </select>
-  </div>`;
+const displayOrder = () => {
+  $('section-two-title').innerHTML = 'Place Your Order';
 
-  $("contact-us-form").insertBefore(gears, $("contact-us-form").children[5]);
-};
+  const gears = document.createElement('div');
+  gears.setAttribute('class', 'form-group');
+  gears.setAttribute('id', 'form-gears');
+
+  gears.innerHTML = 
+  `<label for='gears'>Gears</label> <br />
+  <select name='gears' id='gears' class='form-control'>
+    <option value='' selected disabled>Select Your Gear</option>
+    <option value='Hiking Backpack'>Hiking Backpack</option>
+    <option value='Tent'>Tent</option>
+    <option value='Hiking Pack'>Hiking Pack</option>
+    <option value='Modern Fishing Rod'>Modern Fishing Rod</option>
+    <option value='Fishing Bucket'>Fishing Bucket</option>
+    <option value='Fishing Bait'>Fishing Bait</option>
+    <option value='Sleeping Bag'>Sleeping Bag</option>
+  </select>`;
+
+  $('form').insertBefore(gears, $('form').children[3]);
+  window.location.href = '#section-two';
+}
