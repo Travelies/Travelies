@@ -227,10 +227,32 @@ footer {
     font-size: 2vh;
   }
 
+  .logo {
+    margin-left: 2.5rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .nav-mobile {
+    display: flex;
+    width: 20px;
+    padding-right: 2.5rem;
+  }
+
+  #sect1 {
+    width: 100%;
+    max-width: 100vw;
+    padding-left: 0px;
+    margin: 0px;
+  }
+
   .menu {
     display: none;
   }
-
+  
+  /* mobile nav */
   nav {
     justify-content: space-between;
   }
