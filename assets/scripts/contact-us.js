@@ -12,6 +12,18 @@ const removeErr = () => {
   Array.from(err).forEach((item) => item.remove());
 };
 
+const checkEmail = (email) => {
+  const at = email.indexOf('@');
+  const dot = email.indexOf('.');
+  
+  if (at < 1) return false;
+  if (dot < 1 || dot <= at + 2) return false;
+  if (dot == email.length - 1) return false;
+  if (email.includes('..')) return false;
+
+  return true;
+}
+
 const validateForm = () => {
   const { value: name } = $('name');
   const { value: email } = $('email');
@@ -28,6 +40,8 @@ const validateForm = () => {
     showErr('Name must be at least four characters', 'name');
   } else if (!email) {
     showErr('Email cannot be empty', 'email');
+  } else if (email && !checkEmail(email)) {
+    showErr('Invalid email format', 'email');
   } else if (!phone) {
     showErr('Phone cannot be empty', 'phone');
   } else if (!+phone) {

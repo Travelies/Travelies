@@ -156,6 +156,10 @@ nav {
   transform: rotate(180deg);
 }
 
+textarea {
+  resize: none;
+}
+
 .icons {
   font-size: xx-large;
   color: white;
