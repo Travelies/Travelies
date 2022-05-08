@@ -5,6 +5,10 @@
   margin: 0px;
 }
 
+.lup{
+  font-size: 1.2rem;
+}
+
 /* SECTION 1 */
 #sect1 {
   width: 100%;
@@ -136,6 +140,7 @@
 }
 
 .small-card {
+  background-color: white;
   width: 300px;
   height: 350px;
   overflow: hidden;
@@ -272,6 +277,7 @@ footer {
 }
 
 .vid-desc {
+  margin-left: 2rem;
   max-width: 30vw;
 }
 
@@ -290,9 +296,16 @@ footer {
   color: #ee6a51;
 }
 
+
+.socialmedia {
+  height: 90px;
+  font-size: 3rem;
+}
+
+
 /* MOBILE DISPLAY */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   h1 {
     color: #ee6a51;
     font-weight: 640;
@@ -436,6 +449,8 @@ footer {
   }
 
   .vid-desc {
+
+  
     max-width: 75vw;
     text-align: center;
   }
@@ -474,7 +489,8 @@ footer {
   }
 
   .socialmedia {
-    width: 30px;
+    height: 90px;
+    font-size: 2rem;
   }
 
   footer {

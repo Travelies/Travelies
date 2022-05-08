@@ -171,6 +171,7 @@ textarea {
 
 /* FOOTER */
 footer {
+  background-color: white;
   height: 30vh;
   display: flex;
   justify-content: space-between;
@@ -208,7 +209,7 @@ footer {
 }
 /* END FOOTER */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   h1 {
     color: #ee6a51;
     font-weight: 640;
