@@ -50,6 +50,10 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-image: url('../img/contact-us-floating-item.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -300px;
 }
 
 .section-two-content {
@@ -68,13 +72,4 @@ p {
 #section-two h3 {
   color: black;
   margin: .5rem;
-}
-
-.floating-item {
-  position: absolute;
-  top: 40rem;
-  left: 0;
-  height: auto;
-  width: 100%;
-  z-index: -1;
 }
