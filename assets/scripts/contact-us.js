@@ -59,6 +59,8 @@ const validateForm = () => {
     showErr('Service must be filled', 'service');
   } else if (!message) {
     showErr('message must be filled', 'message');
+  } else if (message.length < 25) {
+    showErr('message must have a minimum of 25 characters', 'message')
   } else {
     alert('Suggestion has been accepted');
     location.href = 'index.html';
