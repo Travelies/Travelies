@@ -1,0 +1,5 @@
+*.docx
+*.fig
+*.zip
+node_modules
+package-lock.json
