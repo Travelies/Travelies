@@ -63,7 +63,7 @@ const validateForm = () => {
     showErr('message must have a minimum of 25 characters', 'message')
   } else {
     alert('Suggestion has been accepted');
-    location.href = 'index.html';
+    location.href = "../index.html";
   }
 };
 
